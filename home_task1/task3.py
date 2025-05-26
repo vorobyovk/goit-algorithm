@@ -1,7 +1,4 @@
-def check_brackets_symmetry(expression):
-    """
-    Перевіряє симетричність дужок у рядку за допомогою стека.
-    """
+def check_brackets_symmetry(expression): 
     stack = []
     brackets_map = {")": "(", "]": "[", "}": "{"}
     opening_brackets = set(brackets_map.values()) # {"(", "[", "{"}
@@ -20,7 +17,6 @@ def check_brackets_symmetry(expression):
                 # Невідповідність типів дужок
                 return f"{expression}: Несиметрично (невідповідність типів дужок: {stack[-1]} та {char})"
         # Інші символи (цифри, оператори, пробіли) ігноруються
-
     if not stack: # Якщо стек порожній після проходження всього рядка
         return f"{expression}: Симетрично"
     else:

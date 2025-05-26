@@ -11,9 +11,7 @@ def generate_request():
     global request_counter
     request_counter += 1
     # Створюємо унікальний ID для заявки
-    request_id = uuid.uuid4() 
-    # Або можна використовувати простий лічильник:
-    # request_id = f"Заявка_№{request_counter}"    
+    request_id = uuid.uuid4()      
     # Імітуємо деякі дані заявки
     request_data = {
         "id": str(request_id),
