@@ -14,11 +14,13 @@ def is_palindrome_deque(input_string):
     return is_palindrome
 
 # Приклади використання:
-print(f"'А роза упала на лапу Азора' є паліндромом: {is_palindrome_deque('А роза упала на лапу Азора')}")
-print(f"'Race car' є паліндромом: {is_palindrome_deque('Race car')}")
-print(f"'hello' є паліндромом: {is_palindrome_deque('hello')}")
-print(f"'Madam' є паліндромом: {is_palindrome_deque('Madam')}")
-print(f"'12321' є паліндромом: {is_palindrome_deque('12321')}")
-print(f"'No lemon, no melon.' є паліндромом: {is_palindrome_deque('No lemon, no melon.')}")
-print(f"'' (порожній рядок) є паліндромом: {is_palindrome_deque('')}")
-print(f"'a' є паліндромом: {is_palindrome_deque('a')}")
+Phrase1 = "А роза упала на лапу Азора"
+Phrase2 = "Race car"
+Phrase3 = "Hello, World!"
+Phrase4 = "12345"
+Phrase5 = "12321"
+print(f" {Phrase1} є паліндромом: {is_palindrome_deque(Phrase1)}")
+print(f" {Phrase2} є паліндромом: {is_palindrome_deque(Phrase2)}")
+print(f" {Phrase3} є паліндромом: {is_palindrome_deque(Phrase3)}")
+print(f" {Phrase4} є паліндромом: {is_palindrome_deque(Phrase4)}")
+print(f" {Phrase5} є паліндромом: {is_palindrome_deque(Phrase5)}")
